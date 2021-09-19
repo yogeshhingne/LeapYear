@@ -1,1 +1,27 @@
-# LeapYear
+leapyear(int year)
+{
+boolean flag=false;
+if(year%400==0)
+{
+flag=true;
+}
+else if(year%100==0)
+{
+flag=false;
+else if(year%4==0)
+{
+flag=true;
+}
+else
+{
+flag=false;
+}
+if(flag)
+{
+System.out.println("leap year");
+}
+else
+{
+System.out.println("not a leap year");
+}
+}
